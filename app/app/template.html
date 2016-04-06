@@ -1,0 +1,13 @@
+Hello.
+<form (ngSubmit)="add()">
+  <input [(ngModel)]="newTask" placeholder="Add a task" />
+  <input type="submit" value="Add" />
+</form>
+<ul>
+  <li *ngFor="#task of tasks?.entities">
+    DD {{task.label}}
+  </li>
+</ul>
+
+<button (click)="prev()">Prev</button>
+<button (click)="next()">Next</button>
